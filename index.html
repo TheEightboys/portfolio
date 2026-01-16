@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Eight Boys | Premium Digital Agency</title>
+    <meta name="description"
+        content="A team of 7 experts specializing in Frontend, Backend, UI/UX, Graphics Design, Video Editing, After Effects, and 3D Blender. We bring your digital vision to life.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Particle Canvas Background -->
+    <canvas id="particles"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">The Eight Boys</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for New Projects
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">We Create</span>
+                <span class="title-gradient">Digital Magic</span>
+            </h1>
+            <p class="hero-subtitle">
+                7 Experts. One Vision. Infinite Possibilities.
+            </p>
+            <p class="hero-description">
+                A premium team of developers, designers & creative artists transforming ideas into stunning digital
+                experiences. From web apps to 3D animations, we do it all.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View Our Work</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Get in Touch</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">16+</span>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">7</span>
+                    <span class="stat-label">Expert Members</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Client Satisfaction</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-card card-1">
+                <div class="card-icon">🎨</div>
+                <span>UI/UX Design</span>
+            </div>
+            <div class="floating-card card-2">
+                <div class="card-icon">💻</div>
+                <span>Development</span>
+            </div>
+            <div class="floating-card card-3">
+                <div class="card-icon">🎬</div>
+                <span>Video Editing</span>
+            </div>
+            <div class="floating-card card-4">
+                <div class="card-icon">🧊</div>
+                <span>3D Blender</span>
+            </div>
+            <div class="hero-orb"></div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Do</span>
+                <h2 class="section-title">Our <span class="gradient-text">Services</span></h2>
+                <p class="section-subtitle">Comprehensive digital solutions tailored to your needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2" />
+                            <path d="M8 21h8M12 17v4" />
+                        </svg>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>Modern, responsive websites with React, Vue, and cutting-edge animations that captivate users.
+                    </p>
+                    <ul class="service-features">
+                        <li>React & Vue.js</li>
+                        <li>Responsive Design</li>
+                        <li>Performance Optimized</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+                            <path d="M8 7h6M8 11h8" />
+                        </svg>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>Robust APIs, databases, and server architecture that power seamless experiences.</p>
+                    <ul class="service-features">
+                        <li>Node.js & Python</li>
+                        <li>Database Design</li>
+                        <li>Cloud Deployment</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 16v-4M12 8h.01" />
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                        </svg>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>User-centered designs that blend aesthetics with functionality for delightful experiences.</p>
+                    <ul class="service-features">
+                        <li>Figma & Adobe XD</li>
+                        <li>User Research</li>
+                        <li>Prototyping</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                            <path d="M2 17l10 5 10-5" />
+                            <path d="M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <h3>Graphics Design</h3>
+                    <p>Stunning visuals, brand identities, and marketing materials that tell your story.</p>
+                    <ul class="service-features">
+                        <li>Logo & Branding</li>
+                        <li>Social Media</li>
+                        <li>Print Design</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="4" width="20" height="16" rx="2" />
+                            <circle cx="12" cy="12" r="3" />
+                            <path d="M12 9v-2M12 17v-2" />
+                        </svg>
+                    </div>
+                    <h3>Video Editing & After Effects</h3>
+                    <p>Cinematic videos, motion graphics, and visual effects that bring stories to life.</p>
+                    <ul class="service-features">
+                        <li>Premiere Pro</li>
+                        <li>After Effects</li>
+                        <li>Motion Graphics</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path
+                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                            <path d="M3.3 7l8.7 5 8.7-5M12 22V12" />
+                        </svg>
+                    </div>
+                    <h3>3D Blender & Animation</h3>
+                    <p>Immersive 3D models, animations, and visualizations that push creative boundaries.</p>
+                    <ul class="service-features">
+                        <li>3D Modeling</li>
+                        <li>Character Animation</li>
+                        <li>Product Visualization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Portfolio</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">15 live projects showcasing our expertise across industries</p>
+            </div>
+            <div class="projects-grid">
+                <a href="https://theeightboys.github.io/fiverrportfoliosite/" target="_blank" class="project-card"
+                    data-tilt>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-link-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="project-placeholder"
+                            style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);">
+                            <span class="project-emoji">✨</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Portfolio</span>
+                            <span>Creative</span>
+                        </div>
+                        <h3>JDM Portfolio</h3>
+                        <p>A creative personal portfolio showcasing camps, sports, and activism.</p>
+                    </div>
+                </a>
+
+                <a href="https://reputationflow360.com/" target="_blank" class="project-card" data-tilt>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-link-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="project-placeholder"
+                            style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <span class="project-emoji">�</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>SaaS</span>
+                            <span>AI</span>
+                            <span>Full-Stack</span>
+                        </div>
+                        <h3>ReputationFlow360</h3>
+                        <p>AI-powered platform for automated review collection, SMS automation, and real-time analytics.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="https://pdfhub-beryl.vercel.app/" target="_blank" class="project-card" data-tilt>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-link-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="project-placeholder"
+                            style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <span class="project-emoji">📄</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Web App</span>
+                            <span>PDF</span>
+                            <span>Privacy</span>
+                        </div>
+                        <h3>Famral PDF Editor</h3>
+                        <p>Free browser-based PDF editing tool. Merge, split, annotate - 100% private, no uploads
+                            needed.</p>
+                    </div>
+                </a>
+
+                <a href="https://redrule.site" target="_blank" class="project-card" data-tilt>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-link-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="project-placeholder"
+                            style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);">
+                            <span class="project-emoji">🔥</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>AI</span>
+                            <span>Reddit</span>
+                            <span>Automation</span>
+                        </div>
+                        <h3>Redrule</h3>
+                        <p>AI-powered Reddit post generator ensuring 100% subreddit rule compliance.</p>
+                    </div>
+                </a>
+
+                <a href="https://callflow-international.vercel.app/" target="_blank" class="project-card" data-tilt>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-link-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="project-placeholder"
+                            style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <span class="project-emoji">�</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Communication</span>
+                            <span>Enterprise</span>
+                        </div>
+                        <h3>CallFlow International</h3>
+                        <p>Modern communication platform for international business connectivity.</p>
+                    </div>
+                </a>
+
+                <a href="https://attribuer.nl" target="_blank" class="project-card" data-tilt>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-link-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="project-placeholder"
+                            style="background: linear-gradient(135deg, #20bf6b 0%, #0fb9b1 100%);">
+                            <span class="project-emoji">�</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Cyber Security</span>
+                            <span>IOT</span>
+                            <span>Automation</span>
+                        </div>
+                        <h3>Attribuer</h3>
+                        <p>IT Consultancy specializing in Cyber Security, Automation & IOT Solutions.</p>
+                    </div>
+                </a>
+
+                <a href="https://superb-sorbet-f38fb7.netlify.app/" target="_blank" class="project-card" data-tilt>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-link-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="project-placeholder"
+                            style="background: linear-gradient(135deg, #a55eea 0%, #8854d0 100%);">
+                            <span class="project-emoji">👟</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Lifestyle</span>
+                            <span>React</span>
+                        </div>
+                        <h3>Walkin.it</h3>
+                        <p>Step Forward - A modern lifestyle platform built with cutting-edge tech.</p>
+                    </div>
+                </a>
+
+                <a href="https://hsehubfinal.vercel.app" target="_blank" class="project-card" data-tilt>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-link-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="project-placeholder"
+                            style="background: linear-gradient(135deg, #2d3436 0%, #636e72 100%);">
+                            <span class="project-emoji">�️</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Enterprise</span>
+                            <span>Safety</span>
+                            <span>Management</span>
+                        </div>
+                        <h3>HSE Hub</h3>
+                        <p>Health, Safety & Environment Management System for enterprise compliance.</p>
+                    </div>
+                </a>
+
+                <a href="https://kishoremk05.github.io/profile/" target="_blank" class="project-card" data-tilt>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-link-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="project-placeholder"
+                            style="background: linear-gradient(135deg, #fd79a8 0%, #e84393 100%);">
+                            <span class="project-emoji">👨‍💻</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Portfolio</span>
+                            <span>Personal</span>
+                            <span>Developer</span>
+                        </div>
+                        <h3>Kishore Profile</h3>
+                        <p>Creative personal developer portfolio showcasing skills and projects.</p>
+                    </div>
+                </a>
+
+                <a href="https://websiteinkluvo.vercel.app/" target="_blank" class="project-card" data-tilt>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-link-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="project-placeholder"
+                            style="background: linear-gradient(135deg, #0984e3 0%, #74b9ff 100%);">
+                            <span class="project-emoji">�</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Business</span>
+                            <span>Landing</span>
+                            <span>Modern</span>
+                        </div>
+                        <h3>Inkluvo</h3>
+                        <p>Professional business website with modern design and seamless user experience.</p>
+                    </div>
+                </a>
+
+                <a href="https://hurecare.vercel.app" target="_blank" class="project-card" data-tilt>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-link-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="project-placeholder"
+                            style="background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);">
+                            <span class="project-emoji">�</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Healthcare</span>
+                            <span>AI</span>
+                            <span>Telemedicine</span>
+                        </div>
+                        <h3>HureCare</h3>
+                        <p>AI-powered mental health and telemedicine platform with video consultations and smart
+                            booking.</p>
+                    </div>
+                </a>
+
+                <a href="https://youtublox.vercel.app/" target="_blank" class="project-card" data-tilt>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-link-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="project-placeholder"
+                            style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);">
+                            <span class="project-emoji">🎬</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>YouTube</span>
+                            <span>Video</span>
+                            <span>Tools</span>
+                        </div>
+                        <h3>Youtublox</h3>
+                        <p>YouTube toolkit platform with advanced video tools and analytics features.</p>
+                    </div>
+                </a>
+
+                <a href="https://whiteboard-ten-psi.vercel.app/" target="_blank" class="project-card" data-tilt>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-link-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="project-placeholder"
+                            style="background: linear-gradient(135deg, #dfe6e9 0%, #b2bec3 100%);">
+                            <span class="project-emoji">🎨</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Collaboration</span>
+                            <span>Drawing</span>
+                            <span>Real-time</span>
+                        </div>
+                        <h3>Whiteboard</h3>
+                        <p>Collaborative real-time whiteboard for teams with drawing and annotation tools.</p>
+                    </div>
+                </a>
+
+                <a href="https://fund-x-kappa.vercel.app" target="_blank" class="project-card" data-tilt>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-link-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="project-placeholder"
+                            style="background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);">
+                            <span class="project-emoji">💰</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Finance</span>
+                            <span>Investment</span>
+                            <span>Platform</span>
+                        </div>
+                        <h3>FundX</h3>
+                        <p>Modern investment and funding platform with advanced financial tools.</p>
+                    </div>
+                </a>
+
+                <a href="https://kishoremk05.github.io/brand-website/" target="_blank" class="project-card" data-tilt>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-link-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="project-placeholder"
+                            style="background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);">
+                            <span class="project-emoji">🏢</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Branding</span>
+                            <span>Corporate</span>
+                            <span>Design</span>
+                        </div>
+                        <h3>Brand Website</h3>
+                        <p>Professional brand identity website with stunning visuals and design.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Meet The Team</span>
+                <h2 class="section-title">Our <span class="gradient-text">Experts</span></h2>
+                <p class="section-subtitle">7 talented professionals ready to bring your vision to life</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card" data-tilt>
+                    <div class="team-avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <span>👨‍💻</span>
+                    </div>
+                    <h3>Barath</h3>
+                    <span class="team-role">Full Stack Developer</span>
+                    <p>Building end-to-end solutions with modern tech stacks and scalable architectures.</p>
+                    <div class="team-skills">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Full Stack</span>
+                    </div>
+                </div>
+                <div class="team-card" data-tilt>
+                    <div class="team-avatar" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <span>⚙️</span>
+                    </div>
+                    <h3>Kishore</h3>
+                    <span class="team-role">Full Stack Developer</span>
+                    <p>Crafting robust applications with expertise in frontend and backend technologies.</p>
+                    <div class="team-skills">
+                        <span>JavaScript</span>
+                        <span>Python</span>
+                        <span>Databases</span>
+                    </div>
+                </div>
+                <div class="team-card" data-tilt>
+                    <div class="team-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <span>🎨</span>
+                    </div>
+                    <h3>Dhanush</h3>
+                    <span class="team-role">Frontend Developer</span>
+                    <p>Creating pixel-perfect, responsive user interfaces with attention to detail.</p>
+                    <div class="team-skills">
+                        <span>React</span>
+                        <span>CSS</span>
+                        <span>UI Design</span>
+                    </div>
+                </div>
+                <div class="team-card" data-tilt>
+                    <div class="team-avatar" style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);">
+                        <span>�</span>
+                    </div>
+                    <h3>Manoj</h3>
+                    <span class="team-role">Research Engineer & Developer</span>
+                    <p>Innovating with cutting-edge research and practical development solutions.</p>
+                    <div class="team-skills">
+                        <span>R&D</span>
+                        <span>AI/ML</span>
+                        <span>Development</span>
+                    </div>
+                </div>
+                <div class="team-card" data-tilt>
+                    <div class="team-avatar" style="background: linear-gradient(135deg, #20bf6b 0%, #0fb9b1 100%);">
+                        <span>💻</span>
+                    </div>
+                    <h3>Manikandan</h3>
+                    <span class="team-role">Frontend Developer</span>
+                    <p>Building beautiful, interactive web experiences with modern frameworks.</p>
+                    <div class="team-skills">
+                        <span>Vue.js</span>
+                        <span>JavaScript</span>
+                        <span>Animations</span>
+                    </div>
+                </div>
+                <div class="team-card" data-tilt>
+                    <div class="team-avatar" style="background: linear-gradient(135deg, #a55eea 0%, #8854d0 100%);">
+                        <span>📊</span>
+                    </div>
+                    <h3>Aditya</h3>
+                    <span class="team-role">Management</span>
+                    <p>Ensuring smooth project delivery with strategic planning and team coordination.</p>
+                    <div class="team-skills">
+                        <span>Project Mgmt</span>
+                        <span>Strategy</span>
+                        <span>Leadership</span>
+                    </div>
+                </div>
+                <div class="team-card" data-tilt>
+                    <div class="team-avatar" style="background: linear-gradient(135deg, #fd79a8 0%, #e84393 100%);">
+                        <span>🧊</span>
+                    </div>
+                    <h3>Jaisurya</h3>
+                    <span class="team-role">3D Artist & Creative Designer</span>
+                    <p>Multi-talented creative specializing in 3D, UI/UX, video editing, and animations.</p>
+                    <div class="team-skills">
+                        <span>Blender</span>
+                        <span>UI/UX</span>
+                        <span>Animation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Say Hello 👋</span>
+                <h2 class="section-title">Let's <span class="gradient-text">Talk</span></h2>
+                <p class="section-subtitle">Got an idea brewing? We're just a message away. No forms, no fuss — just
+                    real conversations.</p>
+            </div>
+
+            <div class="contact-content-centered">
+                <!-- Personal Message -->
+                <div class="contact-intro glass">
+                    <div class="intro-emoji">💬</div>
+                    <h3>We're Real People, Not Bots</h3>
+                    <p>Behind every project is a team that genuinely cares about bringing your vision to life. Whether
+                        you have a detailed brief or just a rough idea scribbled on a napkin, we'd love to chat. Drop us
+                        a line, and we'll get back to you within 24 hours — promise!</p>
+                </div>
+
+                <!-- Contact Cards Grid -->
+                <div class="contact-cards-grid">
+                    <a href="mailto:theboysofficialone@gmail.com" class="contact-card-large glass">
+                        <div class="contact-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </div>
+                        <div class="contact-card-content">
+                            <span class="contact-label">Email us directly</span>
+                            <h4>theboysofficialone@gmail.com</h4>
+                            <p>For project inquiries, collaborations, or just to say hi!</p>
+                        </div>
+                        <div class="contact-arrow">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="https://t.me/barathanand_07" target="_blank"
+                        class="contact-card-large glass telegram-card">
+                        <div class="contact-card-icon telegram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                            </svg>
+                        </div>
+                        <div class="contact-card-content">
+                            <span class="contact-label">Quick chat on Telegram</span>
+                            <h4>@barathanand_07</h4>
+                            <p>Fastest way to reach us. Usually reply within minutes!</p>
+                        </div>
+                        <div class="contact-arrow">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="tel:+919043057100" class="contact-card-large glass phone-card">
+                        <div class="contact-card-icon phone">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                        </div>
+                        <div class="contact-card-content">
+                            <span class="contact-label">Call us directly</span>
+                            <h4>+91 90430 57100</h4>
+                            <p>Available for calls during business hours</p>
+                        </div>
+                        <div class="contact-arrow">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="https://fiverr.com/theboys08" target="_blank" class="contact-card-large glass fiverr-card">
+                        <div class="contact-card-icon fiverr">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.004 15.588a.995.995 0 1 0 .002-1.99.995.995 0 0 0-.002 1.99zm-.996-3.705h-.85c-.546 0-.84.41-.84 1.092v2.466h-1.61v-3.558h-.684c-.547 0-.84.41-.84 1.092v2.466h-1.61V9.853h1.61v1.79c.274-.82.857-1.087 1.524-1.087.684 0 1.228.274 1.228 1.365v2.932h.072v-2.932c0-1.09.545-1.365 1.228-1.365.684 0 1.228.274 1.228 1.365v2.932h1.61v-3.558c0-1.228-.684-1.792-1.756-1.792-.857 0-1.5.34-1.756 1.004h-.072c-.256-.684-.857-1.004-1.528-1.004zm-6.182-1.2h1.61v5.467h-1.61V10.68zm.806-2.593a.983.983 0 1 0-.002 1.966.983.983 0 0 0 .002-1.966zm-4.533 2.593h.766v1.37h-.766v2.303c0 .436.186.606.559.606h.207v1.37h-.31c-1.228 0-2.066-.59-2.066-1.905v-2.374H8.724v-1.37h.668V9.15h1.61v1.532h.297zm-6.182-.363c.684 0 1.182.342 1.365.946h-2.64c.117-.604.59-.946 1.275-.946zm2.91 2.21c0-1.656-1.138-2.593-2.752-2.593-1.7 0-2.863 1.163-2.863 2.878 0 1.74 1.163 2.878 2.91 2.878 1.182 0 2.128-.456 2.548-1.2l-1.138-.684c-.274.41-.73.64-1.365.64-.766 0-1.365-.41-1.478-1.09h4.138v-.829z" />
+                            </svg>
+                        </div>
+                        <div class="contact-card-content">
+                            <span class="contact-label">Hire us on Fiverr</span>
+                            <h4>@theboys08</h4>
+                            <p>Browse our gigs and start your project today!</p>
+                        </div>
+                        <div class="contact-arrow">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Response Promise -->
+                <div class="response-promise">
+                    <div class="promise-icon">⚡</div>
+                    <p><strong>Quick Response Guarantee:</strong> We respond to every message within 24 hours. Most of
+                        the time, it's way faster than that!</p>
+                </div>
+
+                <!-- Social Links -->
+                <div class="social-section">
+                    <p class="social-text">Check out our work on GitHub</p>
+                    <div class="social-links">
+                        <a href="https://github.com/theeightboys" target="_blank" class="social-link"
+                            aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">The Eight Boys</span>
+                    </a>
+                    <p>A premium digital agency crafting exceptional web experiences, stunning designs, and immersive 3D
+                        content.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Frontend Development</li>
+                        <li>Backend Development</li>
+                        <li>UI/UX Design</li>
+                        <li>Video Editing</li>
+                        <li>3D Animation</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Eight Boys. All rights reserved.</p>
+                <p>Crafted with ❤️ by our team</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
